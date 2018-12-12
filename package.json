@@ -1,0 +1,25 @@
+{
+  "name": "ariia-dash-webapp",
+  "version": "1.0.0",
+  "description": "Ariia In Room Assistant Dashboard.",
+  "main": "./server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "node ./server.js",
+    "start": "node ./server.js",
+    "prod": "npm run build && npm run start"
+  },
+  "author": "ariia_coder",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "body-parser": "^1.18.3",
+    "connect-redis": "^3.4.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "node": "^11.1.0",
+    "react": "^16.6.3",
+    "redis": "^2.8.0"
+  }
+}
