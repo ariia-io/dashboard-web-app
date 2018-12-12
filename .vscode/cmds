@@ -1,0 +1,7 @@
+// Docker
+
+docker build -t ariia-webapi . 
+
+docker rm [OPTIONS] CONTAINER [CONTAINER...]
+
+docker rmi 
