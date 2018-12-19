@@ -19,7 +19,7 @@ var PropertyAll = React.createClass({
     
     componentDidMount() {  
       $.ajax({  
-         url: "https://localhost:3000/api/v1/orgs/",  
+         url: "http://localhost:3000/api/v1/orgs/",  
          type: "GET",  
          dataType: 'json',  
          ContentType: 'application/json',  
@@ -38,7 +38,7 @@ var PropertyAll = React.createClass({
     DeleteData(id){  
     var propertyDelete = { 'id': id };        
         $.ajax({  
-        url: "https://localhost:3000/api/v1/orgs/" + id,  
+        url: "http://localhost:3000/api/v1/orgs/" + id,  
         dataType: 'json',  
         type: 'DELETE',  
         data: propertyDelete,  
@@ -68,11 +68,11 @@ var PropertyAll = React.createClass({
      var Url="";
      var op = "";
      if(this.state.Buttontxt=="Save"){  
-        Url="https://localhost:3000/api/v1/orgs";  
+        Url="http://localhost:3000/api/v1/orgs";  
         op = "POST";
       }  
       else {  
-        Url="https://localhost:3000/api/v1/orgs/" + this.item.id;  
+        Url="http://localhost:3000/api/v1/orgs/" + this.item.id;  
         op = "PUT"
       }  
       
